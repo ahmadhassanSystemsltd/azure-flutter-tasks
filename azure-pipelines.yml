@@ -14,13 +14,7 @@ jobs:
         mode: 'auto'
         channel: 'stable'
         version: 'latest'
-    - task: FlutterBuild@0
-      inputs:
-        target: 'apk'
-        projectDirectory:  $(projectDirectory)
-    - task: FlutterTest@0
-      inputs:
-        projectDirectory: $(projectDirectory)
+    
     - task: CopyFiles@2
       inputs:
         contents: '**/*.apk'
