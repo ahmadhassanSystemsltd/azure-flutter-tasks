@@ -16,7 +16,7 @@ jobs:
     - task: FlutterBuild@0
       inputs:
         target: apk
-        projectDirectory: .
+        projectDirectory: azure-flutter-tasks/sample_project/
     - task: FlutterTest@0
       inputs:
         projectDirectory: $(projectDirectory)
