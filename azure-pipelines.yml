@@ -1,5 +1,6 @@
 # Flutter build
 
+
 variables:
   projectDirectory: sample_project
 
@@ -15,8 +16,8 @@ jobs:
         version: 'latest'
     - task: FlutterBuild@0
       inputs:
-        target: apk
-        projectDirectory: azure-flutter-tasks/sample_project/
+        target: 'apk'
+        projectDirectory: 'azure-flutter-tasks/sample_project/'
     - task: FlutterTest@0
       inputs:
         projectDirectory: $(projectDirectory)
